@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Usuarios</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Usuarios</h1>
+        <button id="obtenerUsuarios" class="btn">Obtener Usuarios</button>
+        <ul id="usuariosList"></ul>
+
+        <h2>Añadir Usuario</h2>
+        <form id="crearUsuarioForm" class="form">
+            <div class="input-group">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="emailNuevo" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="passwordNuevo" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="btn">Añadir Usuario</button>
+        </form>
+
+        <h2>Actualizar Usuario</h2>
+        <form id="actualizarUsuarioForm" class="form">
+            <div class="input-group">
+                <input type="text" id="idUsuarioActualizar" placeholder="ID del Usuario" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="nombreActualizar" placeholder="Nombre" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="emailActualizar" placeholder="Correo Electrónico" required>
+            </div>
+            <button type="submit" class="btn">Actualizar Usuario</button>
+        </form>
+
+        <h2>Eliminar Usuario</h2>
+        <form id="eliminarUsuarioForm" class="form">
+            <div class="input-group">
+                <input type="text" id="idUsuarioEliminar" placeholder="ID del Usuario" required>
+            </div>
+            <button type="submit" class="btn">Eliminar Usuario</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
